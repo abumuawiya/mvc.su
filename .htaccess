@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteBase /
+
+Options All -Indexes
+
+RewriteCond %{REQUEST_URI} ^/uslugi/$ [NC]
+RewriteRule ^.*$ https://mvc.su/uslugi? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/novosti/$ [NC]
+RewriteRule ^.*$ https://mvc.su/novosti? [R=301,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]

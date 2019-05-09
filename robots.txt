@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /admin
+
+User-agent: *
+Disallow: /admin
+
+Host: https://mvc.su
+Sitemap: https://mvc.su/sitemap.xml
